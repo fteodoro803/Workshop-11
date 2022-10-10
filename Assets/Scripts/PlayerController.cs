@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         // Assuming mouse input to fire, but similar to above, it would probably
         // be worth thinking about alternative input schemes (e.g. for laptop
         // trackpads).
-        if (Input.GetMouseButtonDown(0)) Fire();
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyUp(KeyCode.Space)) Fire();
     }
 
     private void FixedUpdate()
